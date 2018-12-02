@@ -32,6 +32,12 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Bulma CSS Framework
+gem 'bulma-rails', '~> 0.7.2'
+
+# Simple Form
+gem 'simple_form', '~> 4.1'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -43,6 +49,16 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+
+  # Guard is cli tool
+  gem 'guard', '~> 2.15'
+
+  # Guard Live Reload
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+
+  # Make errors better looking
+  gem 'better_errors', '~> 2.5'
+
 end
 
 group :test do
